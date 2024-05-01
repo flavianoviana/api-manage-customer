@@ -15,10 +15,29 @@ class Customer extends Model
 
     /**
      * @param array $fields
-     * @return Customer|null
+     * @return Customer
      */
     public static function createCustomer(array $fields): Customer
     {
         return self::create($fields);
+    }
+
+    /**
+     * @param array $fields
+     * @param int $customerId
+     * @return Customer
+     */
+    public static function updateCustomer(array $fields, int $customerId): Customer
+    {
+        return self::where('id', '=', $customerId)->update($fields);
+    }
+
+    /**
+     * @param int $customerId
+     * @return bool
+     */
+    public static function deleteCustomer(int $customerId): bool
+    {
+        return self::where('id', '=', $customerId)->delete();
     }
 }
