@@ -25,9 +25,9 @@ class Customer extends Model
     /**
      * @param array $fields
      * @param int $customerId
-     * @return Customer
+     * @return bool
      */
-    public static function updateCustomer(array $fields, int $customerId): Customer
+    public static function updateCustomer(array $fields, int $customerId): bool
     {
         return self::where('id', '=', $customerId)->update($fields);
     }
