@@ -33,6 +33,7 @@ There are other concepts that are out of this scope, for example: Middleware for
 - /api/v1/customer-store
 - /api/v1/customer-update
 - /api/v1/customer-delete
+- /api/documentation
 
 ## Sobre o Projeto
 
@@ -61,5 +62,5 @@ Existem outros conceitos que estão fora desse escopo, por exemplo: Autenticaç�
 - /api/v1/customer-store
 - /api/v1/customer-update
 - /api/v1/customer-delete
-- 
+- /api/documentation
 
