@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\CustomerController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['prefix' => 'v1'], function () {
+    Route::post('customer-store', [CustomerController::class, 'store'])
+        ->name('api.customer.store');
+
+    Route::post('customer-update', [CustomerController::class, 'update'])
+        ->name('api.customer.update');
+
+    Route::post('customer-delete', [CustomerController::class, 'delete'])
+        ->name('api.customer.delete');
 });
