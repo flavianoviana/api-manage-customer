@@ -9,7 +9,7 @@
 
 ## About the project
 
-This is a simple project to demonstrate how an API works in Laravel.
+This is a simple project to demonstrate how an API works in Laravel and how we can document it using swagger.
 
 On this project I'm using:
 
@@ -37,7 +37,7 @@ There are other concepts that are out of this scope, for example: Middleware for
 
 ## Sobre o Projeto
 
-Esse é um simples projeto para demonstrar o funcionamento de uma API em Laravel.
+Esse é um simples projeto para demonstrar o funcionamento de uma API em Laravel e como nós podemos documenta-lá utilizando swagger.
 
 Nesse projeto eu estou utilizando:
 
